@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Program">
+      <UniqueIdentifier>{77dd2a23-5cfa-4899-9e7b-e24aee27446e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{65dab8dc-38ca-45e9-a7b1-f03742e5f13a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JsonCpp">
+      <UniqueIdentifier>{0ad91dd1-1efa-4a6f-88ac-fdff70adec4f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Program\pch.hpp">
+      <Filter>Program</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Module\Token.hpp">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Module\TokenParser.hpp">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Module\Helper.hpp">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Module\SyntaxPaser.hpp" />
+    <ClInclude Include="Source\Module\ClassDefine.hpp" />
+    <ClInclude Include="Source\Module\SemanticAnalyzer.hpp" />
+    <ClInclude Include="Source\Module\Linker.hpp" />
+    <ClInclude Include="Source\External\JsonCpp\json_tool.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\reader.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\value.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\version.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\writer.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\allocator.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\assertions.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\config.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\forwards.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\json.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\External\JsonCpp\json_features.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Module\ObjectFile.hpp" />
+    <ClInclude Include="Source\Module\AST.hpp" />
+    <ClInclude Include="Source\Module\Assembler.hpp" />
+    <ClInclude Include="Source\Module\CodeGenerator.hpp" />
+    <ClInclude Include="Source\Module\StackResAllocator.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Program\CShang.cpp">
+      <Filter>Program</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Module\ClassDefine.cpp" />
+    <ClCompile Include="Source\Module\SyntaxPaser.cpp" />
+    <ClCompile Include="Source\Module\Token.cpp" />
+    <ClCompile Include="Source\Module\TokenParser.cpp" />
+    <ClCompile Include="Source\Module\Helper.cpp" />
+    <ClCompile Include="Source\Module\SemanticAnalyzer.cpp" />
+    <ClCompile Include="Source\Module\Linker.cpp" />
+    <ClCompile Include="Source\External\JsonCpp\json_reader.cpp">
+      <Filter>JsonCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\JsonCpp\json_value.cpp">
+      <Filter>JsonCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\JsonCpp\json_writer.cpp">
+      <Filter>JsonCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Module\ObjectFile.cpp" />
+    <ClCompile Include="Source\Module\AST.cpp" />
+    <ClCompile Include="Source\Module\失败.cpp" />
+    <ClCompile Include="Source\Module\Assembler.cpp" />
+    <ClCompile Include="Source\Module\CodeGenerator.cpp" />
+    <ClCompile Include="Source\Module\StackResAllocator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Test.Shang" />
+    <None Include="test.lua" />
+    <None Include="Source\External\JsonCpp\json_valueiterator.inl">
+      <Filter>JsonCpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>
